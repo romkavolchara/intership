@@ -1,0 +1,13 @@
+version: "3"
+services:
+  nginx:
+    image: romkavolchara/nginx-site:alpine-for-nginx
+    ports:
+      - 80:80
+      - 82:82
+      - 83:83
+      - 443:443
+  apache:
+    image: romkavolchara/nginx-site:debian-for-apache
+    ports:
+      - 81:81
